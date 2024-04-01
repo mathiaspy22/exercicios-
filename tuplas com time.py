@@ -1,0 +1,12 @@
+times = ('','Palmeiras','Atlético Mineiro','Flamengo','Grêmio','Botafogo','Red Bull Bragantino','Fluminense','Atlético Paranaense','Internacional','Fortaleza','São Paulo','Cuiabá','Corinthians','Cruzeiro','Vasco','Bahia','Chapecoense','Juventude','Criciúma','Atlético goianiense')
+
+print(f'-Lista dos times do brasileirão:{times[1:]}')
+print('=-='*20)
+print('-Chapecoense está na posição: {}°'.format(times.index('Chapecoense')))
+print('=-='*20)
+print(f'-Os 5 primeiros colocados são: {times[1:6]}')
+print('=-='*20)
+print(f'-Os últimos 4 colocados da tabela são: {times[17:]} ')
+print('=-='*20)
+print(f'-Os times em ordem alfabética ficam na ordem a seguir: {sorted(times[1:])}')
+print('=-='*20)
