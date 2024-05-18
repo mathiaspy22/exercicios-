@@ -1,21 +1,25 @@
-cont = 0
 #criar uma lista
 lista = []
+contnumeros = 0
 #ler varios numeros
 while True:
-    valores = int(input('Digite um numero:'))
-    lista.append(valores)
-    cont+=1
-    pergunta = str(input('Deseja continuar[S/N]?')).strip().upper()[0]
-    while pergunta not in 'SsNn':
-        pergunta = str(input('Digite uma opção válida[S/N]:')).strip().upper()[0]
+    n = int(input('Digite um numero:'))
+    #adiciona-los a lista
+    lista.append(n)
+    #quantos numeros foram digitados
+    contnumeros+=1
+    #perguntar se deseja parar
+    pergunta = str(input('Deseja continuar?')).upper()[0].strip()[0]
+
     if pergunta in 'Nn':
         break
 
-print(f'A quantidade de números digitados foi {cont}')
-print(f'A lista final de valores foi {lista}')
+if 5 not in lista:
+    print('Não há o numero 5 na lista.')
+else:
+    print('Há o numero 5 na lista')
+
+print(f'A quantidade de numeros digitados foi {contnumeros} numero(s).')
+
 lista.sort(reverse=True)
-print(f'A lista de maneira descrente fica {lista}')
-
-
-
+print(f'A lista em formato descrescente é: {lista}.')
